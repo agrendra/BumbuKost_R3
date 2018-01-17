@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "876025144877",
+    "firebase_url": "https://bumbukost-r3.firebaseio.com",
+    "project_id": "bumbukost-r3",
+    "storage_bucket": "bumbukost-r3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876025144877:android:2934de7dec86c88b",
+        "android_client_info": {
+          "package_name": "com.example.agrendra.bumbukost_r3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876025144877-nk6d4e19a17shg5o3gvko6jauqro0ism.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.agrendra.bumbukost_r3",
+            "certificate_hash": "15ae336b5270e46f77b3ff7bd1ee25c83a1fd032"
+          }
+        },
+        {
+          "client_id": "876025144877-9jjf1k2od3nbq1j1qbr2f1l88f5e5m2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnaIfwZpUwy007UzRsEzHd_TomZZLMHRk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876025144877-9jjf1k2od3nbq1j1qbr2f1l88f5e5m2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
