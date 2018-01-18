@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         minuman.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, dataKategori.class);
+                Intent intent = new Intent(MainActivity.this, dataKategori2.class);
                 intent.putExtra("Kategori","Minuman");
                 startActivity(intent);
             }
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         makanan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, dataKategori.class);
+                Intent intent = new Intent(MainActivity.this, dataKategori2.class);
                 intent.putExtra("Kategori","Makanan");
                 startActivity(intent);
             }
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         cemilan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, dataKategori.class);
+                Intent intent = new Intent(MainActivity.this, dataKategori2.class);
                 intent.putExtra("Kategori","Cemilan");
                 startActivity(intent);
             }
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         rempah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, dataKategori.class);
+                Intent intent = new Intent(MainActivity.this, dataKategori2.class);
                 intent.putExtra("Kategori","Rempah Rempah");
                 startActivity(intent);
             }

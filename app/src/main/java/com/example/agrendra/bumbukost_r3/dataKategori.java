@@ -19,11 +19,6 @@ public class dataKategori extends AppCompatActivity {
     };
 
     Integer[] imageRempah = {
-            R.drawable.cabe_hijau,
-            R.drawable.cabe_merah,
-            R.drawable.jahe,
-            R.drawable.kunyit,
-            R.drawable.lengkuas
     };
 
     String[] namaMakanan = {
@@ -36,12 +31,6 @@ public class dataKategori extends AppCompatActivity {
     };
 
     Integer[] imageMakanan = {
-            R.drawable.nasi_goreng,
-            R.drawable.sambel_goreng_kentang_tempe,
-            R.drawable.telur_dadar_campur,
-            R.drawable.terong_balado,
-            R.drawable.tumis_kacang_panjang,
-            R.drawable.tumis_kangkung
     };
 
     String[] namaMinuman = {
@@ -52,10 +41,6 @@ public class dataKategori extends AppCompatActivity {
     };
 
     Integer[] imageMinum = {
-            R.drawable.citrus_squash,
-            R.drawable.frappuccino,
-            R.drawable.milo_on_top,
-            R.drawable.royal_hot_chocolate
     };
 
     String[] namaCemilan = {
@@ -64,8 +49,6 @@ public class dataKategori extends AppCompatActivity {
     };
 
     Integer[] imageCemilan =  {
-            R.drawable.banana_chocolate_stick,
-            R.drawable.bolu_kukus_kopi
     };
 
 
