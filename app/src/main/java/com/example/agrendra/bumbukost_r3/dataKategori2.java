@@ -3,11 +3,15 @@ package com.example.agrendra.bumbukost_r3;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 public class dataKategori2 extends AppCompatActivity {
 
     Intent intent = new Intent();
+    GridView gridView;
+    String data;
 
     String[] namaRempah = {
             "Bawang bombai",
@@ -58,11 +62,21 @@ public class dataKategori2 extends AppCompatActivity {
     };
 
     String[] namaMakanan = {
-
+            "Ayam Goreng",
+            "Ikan Bakar",
+            "Rendang",
+            "Semur Jengkol",
+            "Staek",
+            "Telor Ceplok"
     };
 
     Integer[] imageMakanan = {
-
+            R.drawable.aym,
+            R.drawable.ikan_bakar,
+            R.drawable.rendang,
+            R.drawable.semurjengkol,
+            R.drawable.staek,
+            R.drawable.telor
     };
 
     String[] namaMinuman = {
@@ -91,7 +105,7 @@ public class dataKategori2 extends AppCompatActivity {
 
     };
 
-    Integer[] imageCemilan =  {
+    Integer[] imageCemilan = {
 
     };
 
@@ -100,22 +114,39 @@ public class dataKategori2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_kategori2);
 
-        GridView gridView = (GridView)findViewById(R.id.dataGrid);
+        gridView = (GridView) findViewById(R.id.dataGrid);
         intent = getIntent();
-        String data = intent.getStringExtra("Kategori");
-        if(data.equals("Rempah Rempah")){
+        data = intent.getStringExtra("Kategori");
+
+        if (data.equals("Rempah Rempah")) {
             CustomListAdapter2 adapter = new CustomListAdapter2(this, namaRempah, imageRempah);
             gridView.setAdapter(adapter);
-        }
-        else if (data.equals("Makanan")){
+            gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                    switch (i){
+                        case 0:
+                            intent = new Intent(dataKategori2.this,detail.class);
+                            intent.putExtra("menu","bawangbombai");
+                            startActivity(intent);
+                            break;
+                        case 1:
+                            intent = new Intent(dataKategori2.this,detail.class);
+                            intent.putExtra("menu","brokoli");
+                            startActivity(intent);
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            });
+        } else if (data.equals("Makanan")) {
             CustomListAdapter2 adapter = new CustomListAdapter2(this, namaMakanan, imageMakanan);
             gridView.setAdapter(adapter);
-        }
-        else if(data.equals("Minuman")){
+        } else if (data.equals("Minuman")) {
             CustomListAdapter2 adapter = new CustomListAdapter2(this, namaMinuman, imageMinum);
             gridView.setAdapter(adapter);
-
-        }else{
+        } else {
             CustomListAdapter2 adapter = new CustomListAdapter2(this, namaCemilan, imageCemilan);
             gridView.setAdapter(adapter);
         }

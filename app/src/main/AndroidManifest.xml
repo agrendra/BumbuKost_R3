@@ -23,7 +23,9 @@
         <activity android:name=".MenuLogin" />
         <activity android:name=".SignIn" />
         <activity android:name=".SignUp" />
-        <activity android:name=".dataKategori2"></activity>
+        <activity android:name=".dataKategori2" />
+        <activity android:name=".detail" />
+        <activity android:name=".rempah"></activity>
     </application>
 
 </manifest>

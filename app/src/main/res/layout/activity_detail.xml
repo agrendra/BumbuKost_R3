@@ -14,14 +14,15 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageId"
+                android:id="@+id/gambar"
                 android:scaleType="centerCrop"
                 android:layout_width="match_parent"
-                android:layout_height="250dp" />
+                android:layout_height="250dp"
+                android:src="@drawable/bawang_bombai"/>
 
             <TextView
-                android:id="@+id/itemName"
-                android:text="Name"
+                android:id="@+id/judul"
+                android:text="Bawang Bombai"
                 android:textColor="@android:color/white"
                 android:background="#4f0e0d0e"
                 android:textSize="30sp"
@@ -34,7 +35,7 @@
     </android.support.v7.widget.CardView>
 
     <TextView
-        android:id="@+id/txtDetails"
+        android:id="@+id/detail"
         android:layout_below="@+id/cardnya"
         android:layout_width="match_parent"
         android:scrollbars="vertical"
@@ -42,7 +43,7 @@
         android:textSize="15dp"
         android:layout_height="match_parent"
         android:gravity="left"
-        android:text="Detailnya"
+        android:text=""
         android:padding="5dp"
         android:textColor="@android:color/black"/>
 

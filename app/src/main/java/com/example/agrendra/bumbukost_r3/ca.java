@@ -12,20 +12,20 @@ import android.widget.TextView;
  * Created by sanriomisintaro on 10/27/17.
  */
 
-public class CustomListAdapter2 extends ArrayAdapter<String> {
+public class ca extends ArrayAdapter<String> {
 
     private final Activity context;
     private final String[] itemname;
-    //private final String[] descriptionItem;
+    private final String[] descriptionItem;
     private final Integer[] imgid;
 
-    public CustomListAdapter2(Activity context, String[] itemname, Integer[] imgid) {
+    public ca(Activity context, String[] itemname, Integer[] imgid, String[] descriptionItem) {
         super(context, R.layout.list_data2, itemname);
         // TODO Auto-generated constructor stub
 
         this.context=context;
         this.itemname=itemname;
-        //this.descriptionItem=descriptionItem;
+        this.descriptionItem=descriptionItem;
         this.imgid=imgid;
     }
 
@@ -34,13 +34,13 @@ public class CustomListAdapter2 extends ArrayAdapter<String> {
         View rowView=inflater.inflate(R.layout.list_data2, null,true);
 
         TextView txtTitle = (TextView) rowView.findViewById(R.id.txtJudul);
-        ImageView imageView = (ImageView) rowView.findViewById(R.id.imgId);
-        //TextView txtDetail = (TextView) rowView.findViewById(R.id.txtDetails);
+        ImageView imageView = (ImageView) rowView.findViewById(R.id.imageId);
+        TextView extratxt = (TextView) rowView.findViewById(R.id.txtDetails);
 
         //dari instansiasi diatas, dimasukkan data yang diambil dari array yang ada di MainActivity
         txtTitle.setText(itemname[position]);
         imageView.setImageResource(imgid[position]);
-        //extratxt.setText("Description "+descriptionItem[position]);
+        extratxt.setText("Description "+descriptionItem[position]);
         return rowView;
 
     };

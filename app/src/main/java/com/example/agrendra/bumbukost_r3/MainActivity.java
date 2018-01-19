@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         rempah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, dataKategori2.class);
+                Intent intent = new Intent(MainActivity.this, rempah.class);
                 intent.putExtra("Kategori","Rempah Rempah");
                 startActivity(intent);
             }
